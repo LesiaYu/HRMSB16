@@ -68,9 +68,9 @@ public class APIPayloadConstants {
               return obj.toString();
     }
 
-    public static String updateEmployeeJsonPayloadDynamic(String eId, String fn, String mn, String ln, String eb, String gender, String jT, String status){
+    public static String updateEmployeeJsonPayloadDynamic(String empId, String fn, String mn, String ln, String eb, String gender, String jT, String status){
         JSONObject obj= new JSONObject();
-        obj.put("employee_id", eId);
+        obj.put("employee_id", empId);
         obj.put("emp_firstname", fn);
         obj.put("emp_middle_name", mn);
         obj.put("emp_lastname", ln);

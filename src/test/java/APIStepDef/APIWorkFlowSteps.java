@@ -159,10 +159,5 @@ public class   APIWorkFlowSteps {
                 header(APIConstants.HEADER_AUTHORIZATION_KEY, GenerateTokenStep.token).body(APIPayloadConstants.updateEmployeeJsonPayloadDynamic(employee_id, fn, mn,ln,eb,gender,jT, status));
     }
 
-    @Then("the employee name {string} is stored as a global variable")
-    public void the_employee_name_is_stored_as_a_global_variable(String empName) {
-        employee_Name = response.jsonPath().getString(empName);
-        System.out.println(employee_Name);
-    }
 
   }

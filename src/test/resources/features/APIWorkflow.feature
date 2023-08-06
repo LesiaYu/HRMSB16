@@ -50,7 +50,6 @@ Feature: Syntax API HRMS Flow
     Given a request is prepared for retrieving an employee
     When a Get call is made to retrieve the employee
     Then the status code for this employee is 200
-
     And this employee data at "employee" object matches with the data used to create the employee
       |emp_firstname|emp_middle_name|emp_lastname|emp_birthday|emp_gender|emp_job_title|emp_status|
       |LesiaSofiVer |     yes       | Dirana     |2013-10-01 |Female     |  Family     |Happy     |
@@ -62,7 +61,6 @@ Feature: Syntax API HRMS Flow
     When a PUT call is made to update an employee
     Then the status code for updating an employee is 200
     And employee updated contains key "Message" and value "Employee record Updated"
-
 
   @updateEDynamic @t
   Scenario: Updating the employee using highly dynamic scenario
